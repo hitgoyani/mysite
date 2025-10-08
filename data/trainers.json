@@ -1,0 +1,14 @@
+[
+  {
+    "name": "John Doe",
+    "specialty": "Strength Coach",
+    "bio": "5 years experience",
+    "image": "images/trainer1.jpg"
+  },
+  {
+    "name": "Emma Smith",
+    "specialty": "Yoga Instructor",
+    "bio": "Certified yoga trainer",
+    "image": "images/trainer2.jpg"
+  }
+]

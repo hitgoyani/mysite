@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FitZone Gym | Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+            .gallery img {
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+            .gallery img:hover {
+                transform: scale(1.08);
+                box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+            }
+            .section-divider {
+                height: 4px;
+                background: linear-gradient(90deg,#00b586 40%,#fff 100%);
+                border-radius: 2px;
+                margin: 12px 0 18px 0;
+                width: 80px;
+            }
+        </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html" class="logo">FitZone</a>
+  </div>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="membership.html">Membership</a>
+  </div>
+  <div class="nav-right">
+    <?php if(isset($_SESSION['user'])): ?>
+      <a href="php/dashboard.php">Dashboard</a>
+      <?php if($_SESSION['role'] === 'admin'): ?>
+        <a href="php/admin_dashboard.php">Admin</a>
+      <?php endif; ?>
+      <a href="php/logout.php" class="btn-logout">Logout</a>
+    <?php else: ?>
+      <a href="login.html" class="btn-login">Login</a>
+      <a href="newmember.html" class="btn-register">Register</a>
+    <?php endif; ?>
+  </div>
+</nav>
+
+    <div class="top-bar">
+        <h1><span class="fitzone-logo">FitZone</span></h1>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn">Login</a>
+            <a href="newmember.html" class="btn">Register</a>
+        </div>
+    </div>
+    <button class="menu-toggle">☰</button>    
+
+
+    <div class="trainer-header" style="background: #f7f7fa; color: #00b586; box-shadow: none;">
+        <h1>📸 FitZone Gym Gallery 📸</h1>
+        <div class="section-divider"></div>
+        <p style="color:#232323;">Explore Our Gym and Community Moments</p>
+    </div>
+    <div class="gallery-container" style="max-width:1100px;margin:0 auto;">
+        <div class="gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;justify-items:center;">
+           <img src="images/photo1.avif" alt="Gym interior with equipment" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/photo2new.jpg" alt="People working out in gym" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/photo3.avif" alt="Zumba class in gym" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/photo4.jpg" alt="Yoga session in gym" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/photo5.jpg" alt="Weightlifting in gym" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/images6.jpg" alt="Intense deadlift workout session" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+           <img src="images/images7.jpg" alt="Group side plank exercise class" style="width:100%; max-width:220px; height:140px; object-fit:cover; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.12);">
+        </div>
+    </div>
+    <footer style="background:#f7f7fa; color:#232323; border-top:2px solid #00b586;">
+        <p>&copy; 2025 FitZone Gym. All rights reserved.</p>
+    </footer>
+    <script src="js/ui_interactions.js"></script>
+</body>
+</html>
+

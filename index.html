@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FitZone Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+            .highlight-card, .trainer-card {
+                background: #fff;
+                border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+            padding: 24px 28px;
+            margin: 24px 18px;
+            transition: box-shadow 0.2s, transform 0.2s;
+            z-index: 1;
+            }
+        .highlight-card:hover, .trainer-card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            transform: translateY(-4px) scale(1.03);
+            z-index: 2;
+            }
+            .btn {
+                background: #00b586;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                padding: 8px 18px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.2s, box-shadow 0.2s;
+                box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            }
+            .btn:hover {
+                background: #009e7f;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            }
+            .section-divider {
+                height: 4px;
+                background: linear-gradient(90deg,#00b586 40%,#fff 100%);
+                border-radius: 2px;
+                margin: 12px 0 18px 0;
+                width: 80px;
+            }
+        .motivation-section {
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+        .testimonial-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+            padding: 32px 32px 24px 32px;
+            margin: 32px auto 0 auto;
+            min-width: 320px;
+            max-width: 540px;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .testimonial-stars {
+            color: #ffc107;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .testimonial-author {
+            color: #00b586;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+        .testimonial-text {
+            color: #232323;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="index.html" class="logo">FitZone</a>
+  </div>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="membership.html">Membership</a>
+  </div>
+  <div class="nav-right">
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="newmember.html" class="btn-register">Register</a>
+  </div>
+</nav>
+
+    <div class="top-bar">
+        <h1><span class="page-title">Welcome to FitZone</span></h1>
+    </div>
+    <button class="menu-toggle">☰</button>
+
+
+    <header class="hero-section" style="height: 320px; min-height: 220px; max-height: 360px; overflow: hidden; position: relative;">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1500&q=80" alt="FitZone Gym People Working Out" style="height: 100%; min-height: 220px; max-height: 360px; object-fit: cover; width: 100%;">
+        <div class="hero-overlay" style="background: rgba(255,255,255,0.82); padding: 32px 24px; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.08);">
+            <h1 style="color: #00b586; font-size: 2.2rem; font-weight: bold; text-shadow: none;">🏋️‍♂️ Welcome to FitZone Gym 💪</h1>
+            <div class="section-divider"></div>
+            <p style="color: #232323; font-size: 1.1rem;">Transform Your Body, Elevate Your Life.</p>
+        </div>
+    </header>
+    <section class="welcome-section container">
+        <h2>🎯 Why Choose FitZone? 🎯</h2>
+        <div class="section-divider"></div>
+        <ul>
+            <li>👨‍🏫 Certified and experienced trainers</li>
+            <li>🏋️‍♀️ Modern equipment and spacious workout zones</li>
+            <li>🧘‍♀️ Group classes: Yoga, Zumba, HIIT, Cardio</li>
+            <li>🥗 Personalized training and nutrition guidance</li>
+            <li>💳 Flexible membership plans for every need</li>
+            <li>🚿 Clean changing rooms, lockers, and smoothie bar</li>
+        </ul>
+    </section>
+    <section class="highlights container">
+        <h2>⭐ Our Highlights ⭐</h2>
+        <div class="section-divider"></div>
+        <div class="highlights-list">
+            <div class="highlight-card">
+                <h3>👨‍🏫 Expert Trainers</h3>
+                <p>Certified trainers for strength, yoga, cardio, and group fitness.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🧘‍♀️ Group Classes</h3>
+                <p>Yoga, Zumba, HIIT, Cardio, and more for all levels.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🥗 Nutrition & Wellness</h3>
+                <p>Personalized nutrition plans and wellness guidance.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🏢 Modern Facilities</h3>
+                <p>Spacious workout zones, clean changing rooms, lockers, and smoothie bar.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" style="margin-top: 32px;">
+        <h2>👨‍🏫 Meet Our Trainers 👨‍🏫</h2>
+        <div class="section-divider"></div>
+        <div class="highlights-list">
+            <div class="trainer-card">
+                <h2>💪 Hit Goyani</h2>
+                <div class="specialization">🏋️‍♂️ Strength & Conditioning</div>
+                <p>8+ years experience. Science-backed muscle building and performance.</p>
+            </div>
+            <div class="trainer-card">
+                <h2>🧘‍♂️ Dhruv Gajera</h2>
+                <div class="specialization">🧘‍♀️ Yoga & Flexibility</div>
+                <p>Certified yoga instructor. Mindfulness, mobility, and balance.</p>
+            </div>
+            <div class="trainer-card">
+                <h2>🏃‍♂️ Abhi Patel</h2>
+                <div class="specialization">💨 Cardio & Weight Loss</div>
+                <p>High-intensity, fat-burning workouts and custom cardio plans.</p>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:18px;">
+            <a href="trainers.html" class="btn" style="background:#00b586; color:#fff; border:none;">See All Trainers</a>
+        </div>
+    </section>
+    <section class="container" style="margin-top: 32px;">
+        <h2>🚀 How to Get Started 🚀</h2>
+        <div class="section-divider"></div>
+        <div class="highlights-list" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+            <div class="highlight-card">
+                <h3>📝 Register Online</h3>
+                <p>Sign up easily with our online registration form.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>💳 Choose Your Plan</h3>
+                <p>Select a membership that fits your goals and lifestyle.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🏋️‍♀️ Start Training</h3>
+                <p>Join classes, meet your trainer, and begin your fitness journey!</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" style="margin-top: 32px;">
+            <div class="motivation-section">
+                <h2>💪 Motivation 💪</h2>
+                <div class="section-divider"></div>
+                <blockquote style="font-size:1.2rem; color:#007bff; text-align:center; margin: 0 0 28px 0; font-style:italic;">"The only bad workout is the one that didn't happen."</blockquote>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-author">Priya Shah</div>
+                    <div class="testimonial-text">"The trainers here are incredibly supportive and knowledgeable. I've lost 10 kg in 3 months and feel stronger than ever!"</div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 FitZone Gym. All rights reserved.</p>
+    </footer>
+    <script src="js/ui_interactions.js"></script>
+</body>
+</html>
+

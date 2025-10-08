@@ -1,0 +1,8 @@
+{
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.suggest.basic": true,
+    "php.validate.enable": true,
+    "php.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.validate.run": "onType",
+    "liveServer.settings.port": 5501
+}
